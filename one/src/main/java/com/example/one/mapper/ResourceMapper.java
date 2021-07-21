@@ -1,0 +1,1 @@
+package com.example.one.mapper;import com.example.one.bean.MyResourceBean;import org.apache.ibatis.annotations.Mapper;import org.apache.ibatis.annotations.Select;import java.util.List;/** * @author zhoupeng create on 2021/7/17 */@Mapperpublic interface ResourceMapper {    @Select("select * from resource ")    List<MyResourceBean> selectAllResource();}
